@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ohno.wav-efa7895e8fd7bb9e291d0d26f6760a84.sample"
+
+[deps]
+
+source_file="res://Downloads/SFX/Ohno.wav"
+dest_files=[ "res://.import/Ohno.wav-efa7895e8fd7bb9e291d0d26f6760a84.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

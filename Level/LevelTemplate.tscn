@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Assets/Models/Architecture/floorFull.mesh" type="ArrayMesh" id=1]
+[ext_resource path="res://Models/Architecture/floorFull.mesh" type="ArrayMesh" id=1]
 [ext_resource path="res://default_env.tres" type="Environment" id=2]
-[ext_resource path="res://Assets/Models/Furniture/deskCorner.mesh" type="ArrayMesh" id=3]
-[ext_resource path="res://Assets/Models/Furniture/laptop.mesh" type="ArrayMesh" id=4]
+[ext_resource path="res://Models/Furniture/deskCorner.mesh" type="ArrayMesh" id=3]
+[ext_resource path="res://Models/Furniture/laptop.mesh" type="ArrayMesh" id=4]
+[ext_resource path="res://Scenes/Characters/Players/PlayerM.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( 0, 0.25, 0, 0, 0, 0, 0, 0.25, 5, 0, 0, 5, 0, 0.25, 5, 0, 0, 0, 0, 0.25, 0, 0, 0.25, 5, -5, 0.25, 0, -5, 0.25, 5, -5, 0.25, 0, 0, 0.25, 5, 0, 0, 5, 0, 0, 0, -5, 0, 5, -5, 0, 0, -5, 0, 5, 0, 0, 0, 0, 0, 5, -5, 0, 5, 0, 0.25, 5, -5, 0.25, 5, 0, 0.25, 5, -5, 0, 5, -5, 0, 0, 0, 0, 0, -5, 0.25, 0, 0, 0.25, 0, -5, 0.25, 0, 0, 0, 0, -5, 0, 0, -5, 0.25, 0, -5, 0, 5, -5, 0.25, 5, -5, 0, 5, -5, 0.25, 0 )
@@ -27,7 +28,7 @@ material/0 = null
 shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 40 )
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -40, 3, 0 )
 environment = ExtResource( 2 )
 
 [node name="Funriture" type="Node" parent="."]
@@ -68,3 +69,6 @@ shape = SubResource( 3 )
 transform = Transform( 0.479918, -0.816718, 0.320391, 0.370023, 0.519558, 0.770157, -0.795463, -0.25106, 0.55155, 29.0726, 32.0692, 27.6742 )
 light_color = Color( 0.282353, 0.894118, 0.941176, 1 )
 light_energy = 2.5
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.0489 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/finalbattle.ogg-4585df0501f10b053f2c70af52ca3214.oggstr"
+
+[deps]
+
+source_file="res://Downloads/SFX/finalbattle.ogg"
+dest_files=[ "res://.import/finalbattle.ogg-4585df0501f10b053f2c70af52ca3214.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
