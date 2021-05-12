@@ -71,4 +71,4 @@ light_color = Color( 0.282353, 0.894118, 0.941176, 1 )
 light_energy = 2.5
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.0489 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.6187, 0, 9.35149 )
