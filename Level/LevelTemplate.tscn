@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Models/Architecture/floorFull.mesh" type="ArrayMesh" id=1]
 [ext_resource path="res://Architecture/wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Characters/Robot/Robot.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Characters/Players/PlayerM.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Architecture/DoorwayWide.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Architecture/Window.tscn" type="PackedScene" id=8]
@@ -128,18 +129,23 @@ transform = Transform( 7.15493e-09, 0, -0.6, 0, 0.55, 0, 0.6, 0, 7.15493e-09, 19
 transform = Transform( 7.15493e-09, 0, -0.6, 0, 0.55, 0, 0.6, 0, 7.15493e-09, 19.5, 0, 4 )
 
 [node name="wall15" parent="Walls" instance=ExtResource( 2 )]
-transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, -2 )
+transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, 7 )
 
 [node name="wall16" parent="Walls" instance=ExtResource( 2 )]
 transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, 4 )
 
-[node name="Window3" parent="Walls" instance=ExtResource( 8 )]
-transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, -5 )
-
-[node name="Window4" parent="Walls" instance=ExtResource( 8 )]
-transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, 7 )
-
-[node name="WindowSlide2" parent="Walls" instance=ExtResource( 9 )]
+[node name="wall29" parent="Walls" instance=ExtResource( 2 )]
 transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, 1 )
 
+[node name="wall30" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, -2 )
+
+[node name="wall31" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( -9.77524e-08, 0, 0.6, 0, 0.55, 0, -0.6, 0, -9.77524e-08, -19.5, 0, -5 )
+
 [node name="Funriture" type="Node" parent="."]
+
+[node name="Robots" type="Node" parent="."]
+
+[node name="Robot" parent="Robots" instance=ExtResource( 3 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 15, 0.25, 0 )

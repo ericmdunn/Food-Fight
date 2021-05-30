@@ -9,7 +9,6 @@ const PROJECTILE_SPEED = 50
 
 func _ready():
 	food_types = FileGrabber.get_files("res://Projectiles/Food_Types/")
-	print(food_types)
 	randomize()
 
 

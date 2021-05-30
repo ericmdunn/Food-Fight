@@ -30,8 +30,6 @@ func spawn():
 	bystander.set_as_toplevel(true)
 	bystander.global_transform = $Forward.global_transform
 	var spawner_forward = global_transform.basis[2].normalized()
-	print($Forward.global_transform)
-	print(global_transform.basis[2])
 	bystander.linear_velocity = spawner_forward * SPEED
 	
 
