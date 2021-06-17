@@ -68,4 +68,8 @@ collision_mask = 2
 
 [node name="TranslationAnimation" type="AnimationPlayer" parent="." index="6"]
 
+[node name="DeathAnimationTimer" type="Timer" parent="." index="7"]
+wait_time = 0.2
+[connection signal="timeout" from="DeathAnimationTimer" to="." method="_on_DeathAnimationTimer1_timeout"]
+
 [editable path="RobotArmature"]

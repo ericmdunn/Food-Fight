@@ -15,6 +15,8 @@ var mouse_sensitivity = 500
 
 
 func _ready():
+	# Collision mask for fired projectiles; they interact with robots but not player
+	projectile_collision_mask = 0x7d
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 
